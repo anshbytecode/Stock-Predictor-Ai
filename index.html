@@ -16,17 +16,75 @@
   <body>
     <div id="root"></div>
 
-    <footer>
-  © <span id="year"></span> Anshul Bhilare. All rights reserved.
+   <footer class="footer">
+  <div class="footer-content">
+    <h2>Stock Predictor AI</h2>
+    <p class="tagline">Smarter Trading. Real-Time Insights. Built with 💙 by Anshul Bhilare.</p>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+      © <span id="year"></span> Anshul Bhilare — All rights reserved.
+    </p>
+  </div>
 </footer>
+
+<style>
+  .footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #e0e1dd;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .footer h2 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    color: #a9bcd0;
+    margin-bottom: 20px;
+  }
+
+  .footer-line {
+    width: 60px;
+    height: 2px;
+    background: #00b4d8;
+    margin: 10px auto 20px;
+    border-radius: 2px;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: #adb5bd;
+  }
+
+  /* Optional hover glow for interactive feel */
+  .footer:hover {
+    background: linear-gradient(135deg, #14213d, #1b263b);
+    transition: background 0.5s ease;
+  }
+</style>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
 
 
 
