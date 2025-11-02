@@ -1,3 +1,26 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Predictor AI - Real-time Trading Signals</title>
+    <meta name="description" content="AI-powered stock prediction engine with real-time signals, risk analysis, and automated trading recommendations" />
+    <meta name="author" content="Stock Predictor AI" />
+
+    <meta property="og:title" content="Stock Predictor AI - Real-time Trading Signals" />
+    <meta property="og:description" content="AI-powered stock prediction engine with real-time signals, risk analysis, and automated trading recommendations" />
+    <meta property="og:type" content="website" />
+    
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+ -->
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,15 +33,72 @@
     <meta property="og:title" content="Stock Predictor AI - Real-time Trading Signals" />
     <meta property="og:description" content="AI-powered stock prediction engine with real-time signals, risk analysis, and automated trading recommendations" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <style>
+      /* Small footer styles — tweak to match your site */
+      .site-footer {
+        background: #f7f7f7;
+        color: #333;
+        padding: 14px 16px;
+        font-size: 14px;
+        text-align: center;
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .site-footer .meta {
+        margin: 6px 0 0;
+        color: #666;
+        font-size: 12px;
+      }
+
+      .site-footer a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      /* Ensure the page main area pushes footer to bottom if you want a sticky footer,
+         keep this simple by giving the root a min-height; adapt as needed in your app. */
+      html, body, #root {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      #root {
+        flex: 1 0 auto;
+      }
+
+      footer {
+        flex-shrink: 0;
+      }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- COPYRIGHT + DISCLAIMER FOOTER -->
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+      <div>
+        © <span id="site-year"></span> Anshul Bhilare. All rights reserved.
+      </div>
+      <div class="meta">
+        Not financial advice. This site provides informational and educational content only.
+        Do not execute trades without independent verification. Learn more at
+        <a href="/privacy" rel="noopener noreferrer">Privacy & Terms</a>.
+      </div>
+    </footer>
+
+    <script>
+      // Auto-update year so you don't have to edit every January
+      document.getElementById('site-year').textContent = new Date().getFullYear();
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
